@@ -1475,6 +1475,13 @@ hasown@^2.0.0:
   dependencies:
     function-bind "^1.1.2"
 
+hoist-non-react-statics@^3.3.2:
+  version "3.3.2"
+  resolved "https://registry.npmjs.org/hoist-non-react-statics/-/hoist-non-react-statics-3.3.2.tgz#ece0acaf71d62c2969c2ec59feff42a4b1a85b45"
+  integrity sha512-/gGivxi8JPKWNm/W0jSmzcMPpfpPLc3dY/6GxhX2hQ9iGj3aDfklV4ET7NjKpSinLpJ5vafa9iiGIEZg10SfBw==
+  dependencies:
+    react-is "^16.7.0"
+
 https-proxy-agent@^5.0.0:
   version "5.0.1"
   resolved "https://registry.npmjs.org/https-proxy-agent/-/https-proxy-agent-5.0.1.tgz#c59ef224a04fe8b754f3db0063a25ea30d0005d6"
@@ -1955,6 +1962,13 @@ next-auth@^4.24.5:
     preact-render-to-string "^5.1.19"
     uuid "^8.3.2"
 
+next-superjson-plugin@^0.5.10:
+  version "0.5.10"
+  resolved "https://registry.npmjs.org/next-superjson-plugin/-/next-superjson-plugin-0.5.10.tgz#e582ddac28400cd4887fe3ae22ea004734a4d95c"
+  integrity sha512-y3vAKlZfZP6iEDb0R+XQ6UQ7YYDxbsZ0iZlV50/Hvw0Fzl+ScQJj+CbXdcl+ETugK9JbhCS7G7hMCGIjiGkgXQ==
+  dependencies:
+    hoist-non-react-statics "^3.3.2"
+
 next@14.0.2:
   version "14.0.2"
   resolved "https://registry.npmjs.org/next/-/next-14.0.2.tgz#02ba6a1656edf14d3913c7a3553026e9d6e083c7"
@@ -2277,6 +2291,16 @@ prelude-ls@^1.2.1:
   resolved "https://registry.npmjs.org/prelude-ls/-/prelude-ls-1.2.1.tgz#debc6489d7a6e6b0e7611888cec880337d316396"
   integrity sha512-vkcDPrRZo1QZLbn5RLGPpg/WmIQ65qoWWhcGKf/b5eplkkarX0m9z8ppCat4mlOqUsWpyNuYgO3VRyrYHSzX5g==
 
+prettier-plugin-tailwindcss@^0.5.7:
+  version "0.5.7"
+  resolved "https://registry.npmjs.org/prettier-plugin-tailwindcss/-/prettier-plugin-tailwindcss-0.5.7.tgz#d05dc42c6f2167e3bf2c20e9f71a1fff4232b5d9"
+  integrity sha512-4v6uESAgwCni6YF6DwJlRaDjg9Z+al5zM4JfngcazMy4WEf/XkPS5TEQjbD+DZ5iNuG6RrKQLa/HuX2SYzC3kQ==
+
+prettier@^3.1.0:
+  version "3.1.0"
+  resolved "https://registry.npmjs.org/prettier/-/prettier-3.1.0.tgz#c6d16474a5f764ea1a4a373c593b779697744d5e"
+  integrity sha512-TQLvXjq5IAibjh8EpBIkNKxO749UEWABoiIZehEPiY4GNpVdhaFKqSTu+QrlU6D2dPAfubRmtJTi4K4YkQ5eXw==
+
 pretty-format@^3.8.0:
   version "3.8.0"
   resolved "https://registry.npmjs.org/pretty-format/-/pretty-format-3.8.0.tgz#bfbed56d5e9a776645f4b1ff7aa1a3ac4fa3c385"
@@ -2338,7 +2362,7 @@ react-icons@^4.12.0:
   resolved "https://registry.npmjs.org/react-icons/-/react-icons-4.12.0.tgz#54806159a966961bfd5cdb26e492f4dafd6a8d78"
   integrity sha512-IBaDuHiShdZqmfc/TwHu6+d6k2ltNCf3AszxNmjJc1KUfXdEeRJOKyNvLmAHaarhzGmTSVygNdyu8/opXv2gaw==
 
-react-is@^16.13.1:
+react-is@^16.13.1, react-is@^16.7.0:
   version "16.13.1"
   resolved "https://registry.npmjs.org/react-is/-/react-is-16.13.1.tgz#789729a4dc36de2999dc156dd6c1d9c18cea56a4"
   integrity sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==
