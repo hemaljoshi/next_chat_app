@@ -4,7 +4,7 @@ import prisma from "@/app/libs/prismadb";
 import { pusherServer } from "@/app/libs/pusher";
 
 interface IParams {
-  conversationId: string;
+  conversationId?: string;
 }
 
 export async function POST(request: Request, { params }: { params: IParams }) {
@@ -22,7 +22,7 @@ export async function POST(request: Request, { params }: { params: IParams }) {
     });
 
     if (!conversation) {
-      return new NextResponse("Invalid ID", { status: 404 });
+      return new NextResponse("Invalid ID", { status: 400 });
     }
 
     const lastMessage = conversation.messages[conversation.messages.length - 1];
@@ -61,9 +61,9 @@ export async function POST(request: Request, { params }: { params: IParams }) {
       updatedMessage
     );
 
-    return NextResponse.json("Success");
+    return new NextResponse("Success");
   } catch (error) {
-    console.error(error, "ERROR_MESSAGES_SEEN");
-    return new NextResponse("Internal Server Error", { status: 500 });
+    console.log(error, "ERROR_MESSAGES_SEEN");
+    return new NextResponse("Error", { status: 500 });
   }
 }
