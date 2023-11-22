@@ -51,7 +51,7 @@ export async function POST(request: Request, { params }: { params: IParams }) {
       messages: [updatedMessage],
     });
 
-    if (lastMessage.seenIds.indexOf(currentUser.id) === -1) {
+    if (lastMessage.seenIds.indexOf(currentUser.id) !== -1) {
       return NextResponse.json(conversation);
     }
 
@@ -61,7 +61,7 @@ export async function POST(request: Request, { params }: { params: IParams }) {
       updatedMessage
     );
 
-    return NextResponse.json(updatedMessage);
+    return NextResponse.json("Success");
   } catch (error) {
     console.error(error, "ERROR_MESSAGES_SEEN");
     return new NextResponse("Internal Server Error", { status: 500 });
