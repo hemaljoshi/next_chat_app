@@ -51,20 +51,20 @@ To run the project locally, follow these steps:
 Before running the application, you need to set up the required configuration variables. Create a `.env` file in the root of your project and add the following variables:
 
 ```env
-DATABASE_URL="****"
-NEXTAUTH_SECRET="****"
+DATABASE_URL="**YOUR_DB_URL**"
+NEXTAUTH_SECRET="**key_goes_here**"
 
-GITHUB_ID=****
-GITHUB_SECRET=****
+GITHUB_ID=key_goes_here
+GITHUB_SECRET=key_goes_here
 
-GOOGLE_CLIENT_ID=****
-GOOGLE_CLIENT_SECRET=****
+GOOGLE_CLIENT_ID=key_goes_here
+GOOGLE_CLIENT_SECRET=key_goes_here
 
-NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME=****
+NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME=key_goes_here
 
-NEXT_PUBLIC_PUSHER_APP_KEY=****
-PUSHER_APP_ID=****
-PUSHER_SECRET=****
+NEXT_PUBLIC_PUSHER_APP_KEY=key_goes_here
+PUSHER_APP_ID=key_goes_here
+PUSHER_SECRET=key_goes_here
 ```
 
 ## Usage
