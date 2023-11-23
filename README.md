@@ -1,36 +1,90 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Realtime Chat Application
+
+Welcome to the Realtime Chat Application, a modern chat platform that enables users to communicate in real-time. This project leverages various technologies, including MongoDB for data storage, Prisma for database management, Pusher for real-time chat functionality, NextAuth.js for authentication with GitHub, Google, and email/password, custom hooks for enhanced functionality, Cloudinary for storing images used in chat, and Tailwind CSS for responsive and appealing design. This README provides an overview of the project and instructions for setup.
+
+## Live Demo
+
+You can access the live demo of this Realtime Chat Application at [https://chat-app-theta-olive.vercel.app/](https://chat-app-theta-olive.vercel.app/).
+
+## Features
+
+- **Real-time Chat:** Engage in real-time conversations with other users.
+- **Multi-Authentication:** Support for authentication via GitHub, Google, and email/password using NextAuth.js.
+- **Image Sharing:** Users can share images in the chat, with Cloudinary for image storage.
+- **Database Management:** MongoDB is used as the database, with Prisma as the query builder and data layer.
+- **Custom Hooks:** Enhance functionality with custom React hooks.
+- **Responsive Design:** Tailwind CSS ensures a responsive and visually appealing user interface.
+
+## Technologies Used
+
+- [MongoDB](https://www.mongodb.com/): A NoSQL database for efficient data storage.
+- [Prisma](https://www.prisma.io/): A modern database toolkit for TypeScript and Node.js.
+- [Pusher](https://pusher.com/): A hosted service for adding real-time functionality to applications.
+- [NextAuth.js](https://next-auth.js.org/): Authentication library for Next.js applications.
+- [Cloudinary](https://cloudinary.com/): Cloud-based image and video management service.
+- [Tailwind CSS](https://tailwindcss.com/): A utility-first CSS framework for designing modern web applications.
 
 ## Getting Started
 
-First, run the development server:
+To run the project locally, follow these steps:
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/joshihemal/chat_app.git
+   ```
+
+2. Change the directory to the project folder:
+
+   ```bash
+   cd chat_app
+   ```
+
+3. Install the dependencies:
+
+   ```bash
+   npm install
+   ```
+
+## Configuration
+
+Before running the application, you need to set up the required configuration variables. Create a `.env` file in the root of your project and add the following variables:
+
+```env
+DATABASE_URL="****"
+NEXTAUTH_SECRET="****"
+
+GITHUB_ID=****
+GITHUB_SECRET=****
+
+GOOGLE_CLIENT_ID=****
+GOOGLE_CLIENT_SECRET=****
+
+NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME=****
+
+NEXT_PUBLIC_PUSHER_APP_KEY=****
+PUSHER_APP_ID=****
+PUSHER_SECRET=****
+```
+
+## Usage
+
+Once the configuration is set up, you can start the development server with the following command:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+This will start the application on `http://localhost:3000`.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Contributing
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+If you'd like to contribute to this project, please follow the [CONTRIBUTING.md](CONTRIBUTING.md) guidelines.
 
-## Learn More
+## License
 
-To learn more about Next.js, take a look at the following resources:
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Thank you for exploring the Realtime Chat Application! If you have any questions or feedback, please feel free to open an issue or contact the project's maintainer.
